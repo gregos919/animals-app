@@ -1,0 +1,17 @@
+<div class="nav-parent" [ngClass]="{ open: isOpen }">
+    <div class="nav-bg">
+        <div class="hamburger" (click)="toggleResponsiveNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="main-nav">
+            <a href="/animals">Overview</a>
+            <a href="#">Mobile</a>
+            <a href="#">Internet</a>
+            <a href="#">TV</a>
+            <a href="#">Support</a>
+        </nav>
+    </div>
+</div>

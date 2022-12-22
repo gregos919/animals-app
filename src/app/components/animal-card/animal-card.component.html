@@ -1,0 +1,10 @@
+<div [ngClass]="['card', size]">
+    <div
+        class="card-image"
+        [style.background-image]="'url(' + animal.avatar + ')'"
+    ></div>
+    <div class="card-content">
+        <h2>{{ animal.name }}</h2>
+        <h3>{{ animal.type }}</h3>
+    </div>
+</div>
