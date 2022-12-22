@@ -1,0 +1,10 @@
+<div class="animals-grid">
+    <a
+        class="card-link"
+        *ngFor="let animal of animals"
+        routerLink="/animals/{{ animal.id }}"
+    >
+        <app-animal-card [animal]="animal"></app-animal-card>
+    </a>
+</div>
+<app-button (btnClick)="getAnimals()" text="Update"></app-button>
